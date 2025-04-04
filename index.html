@@ -5,6 +5,7 @@
   <title>Scoped CSS Variables and JS</title>
   <link rel="icon" href="https://fav.farm/" />
   <link rel ="stylesheet" href="styles.css" />
+  <script src="script.js" ></script>
 </head>
 <body>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
@@ -21,20 +22,6 @@
   </div>
 
   <img src="frame.jpg">
-  
-  <script>
-    const inputs = document.querySelectorAll('.controls input');
-    
-    function handleUpdate() {
-      const suffix = this.dataset.sizing || '';
-      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
-    }
-
-    inputs.forEach( input => input.addEventListener('change', handleUpdate));
-    inputs.forEach( input => input.addEventListener('movemouse', handleUpdate));
-    
-
-    </script>
 
 </body>
 </html>
