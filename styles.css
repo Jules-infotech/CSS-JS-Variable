@@ -1,0 +1,37 @@
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    :root {
+      --spacing: 20px;
+      --blur: 10px;
+      --baseColor: #ffc600;
+    }
+
+    .hl {
+      color: var(--baseColor);
+    }
+
+    img {
+      padding: var(--spacing);
+      background-color: var(--baseColor);
+      filter: blur(var(--blur));
+    }
+    
+
+    body {
+      text-align: center;
+      background: #5f1d1d;
+      color: white;
+      font-family: 'Robeto', sans-serif;
+      font-weight: 50px;
+      font-size: 30px;
+    }
+
+    .controls {
+      margin-bottom: 100px;
+    }
+
+    input {
+      width: 100px;
+    }
